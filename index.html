@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zanuda</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="main">
+
+        <button id="btnCur">Текущая погода</button>
+        <button id="btnNoCur">Погода на пять дней</button>
+    </div>
+    <div id="cont"></div>
+    <div id="conttwo"></div>
+    <style>
+        h1 {
+            color: rgb(0, 0, 0);
+            text-shadow: 3px 3px 8px rgba(150, 150, 150, 1);
+        }
+
+        h2 {
+            color: rgb(126, 126, 126);
+            text-shadow: 3px 3px 8px rgba(150, 150, 150, 1);
+        }
+
+        #cont {
+            display: none;
+        }
+
+        #cont,
+        #conttwo {
+            width: 2400px;
+            height: 800px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #conttwo {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+        }
+
+        #btnCur,
+        #btnNoCur {
+            width: 350px;
+            height: 80px;
+            font-size: 30px;
+            border: none;
+            background-color: rgb(0, 174, 255);
+            border-radius: 10px;
+            color: white;
+        }
+
+        #day1,
+        #day2,
+        #day3,
+        #day4,
+        #day5 {
+            border: 1px solid rgb(0, 132, 255);
+        }
+
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
+</body>
+
+</html>
